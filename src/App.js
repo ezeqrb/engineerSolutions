@@ -1,23 +1,22 @@
 import logo from './logo.svg';
-import './App.css';
 import { useTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
-import  NavBar  from './components/NavBar';
-import  Section1 from './components/section1';
-import  Section2 from './components/section2';
 import Container from '@material-ui/core/Container'
 import { makeStyles } from '@material-ui/core/styles';
 
+import Typography from '@material-ui/core/Typography'
+import NavBar  from './components/NavBar';
+import Section1 from './components/section1';
+import Section2 from './components/section2';
+import Section3  from './components/section3';
+import Section4 from './components/section4';
 
 
 
 const useStyles = makeStyles({
-  bg1: {
-    backgroundColor: '#f5f5f5',
+  app:{
+    textAlign: 'center',
     
-  },
+  }
 });
 
 function App() {
@@ -26,15 +25,14 @@ function App() {
 
 
   return (
-    <div className="App">
-      <NavBar />
-      <Container maxWidth="xl" className={classes.bg1}>
+    <div className={classes.app}>
+        <NavBar/>
         <Section1 />
-        
-      </Container>
-      <Container maxWidth="xl">
         <Section2 />
-      </Container>
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        
     </div>
   );
 }

@@ -3,21 +3,38 @@ import { createTheme } from '@material-ui/core/styles';
  const theme =  createTheme({
     palette:{
         primary:{
-            main:"#FFC107"
+            main:"#65bfb0"
         },
         secondary:{
-            main:"#7952B3"
+            main:"#2d3748"
         },
         third:{
-            main:"#343A40"
+            main:"#646e73"
         }
     },
     typography:{
         fontFamily: "Inter",
-        fontWeightLight: 400,
-        fontWeightRegular: 500,
-        fontWeightMedium: 600,
-        fontWeightBold: 700, 
+        h1:{
+            fontWeight: 850,
+        },
+        h2:{
+            fontWeight: 800,
+        },
+        h3:{
+            fontWeight: 750,
+        },
+        h4:{
+            fontWeight: 700,
+        },
+        h5:{
+            fontWeight: 600,
+        },
+        h6:{
+            fontWeight: 500,
+        },
+        subtitle1:{
+            fontWeight: 400,
+        },
     }
 });
 

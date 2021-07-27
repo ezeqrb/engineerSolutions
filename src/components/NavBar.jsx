@@ -8,9 +8,9 @@ const NavBar = (props) => {
         <>
         
         <AppBar position="fixed" color="#E1E8EB">
-          <Toolbar>
-            <Typography variant="h6">
-              
+          <Toolbar> 
+            <Typography variant="h5">
+              FJ SOLUTIONS
             </Typography>
           </Toolbar>
         </AppBar>
