@@ -7,7 +7,6 @@ import { Typography, Button, Divider } from '@material-ui/core';
 import imagen2 from '../assets/imagen2.png'
 import TextField from '@material-ui/core/TextField';
 
-
 const useStyles = makeStyles({
     map:{
         width:"800",
@@ -17,20 +16,28 @@ const useStyles = makeStyles({
         loading:"lazy"
     },
     backgroundForm:{
-        backgroundColor:'white'
+        backgroundColor:'#f5f5f5'
+    },
+    boxStyle:{
+        marginTop:'50px'
+    },
+    form:{
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
     }
 })
 
 const Section4 = () => {
 
     const classes = useStyles();
-    
+        
     
     return (
         <>
         
-            <Box >
-
+            <Box className={classes.boxStyle}>
+                <form className={classes.form} noValidate >
                 <Grid container  >
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={6} >
                             <Grid container >
@@ -70,7 +77,7 @@ const Section4 = () => {
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={6} >
                             
                             <Box className={classes.backgroundForm}>
-                                <Grid container spacing={1}>
+                                <Grid container className={classes.form} >
                                     <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
                                         <TextField
                                             error
@@ -126,11 +133,10 @@ const Section4 = () => {
                             </Box>
                             
                     </Grid>
-                   
-
+                
                 </Grid>
 
-
+            </form>
 
             </Box>
 

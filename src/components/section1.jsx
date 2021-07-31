@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography'
 import { useTheme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
-import imagen1 from '../assets/imagen3.png'
+import imagen1 from '../assets/imagen1.png'
 import { CalendarViewDay } from '@material-ui/icons';
 
 
@@ -14,7 +14,7 @@ const useStyles = makeStyles({
    
     imagen1:{
         width:'100%',
-        height:'75%',
+        height:'60%',
        
     },
     contenedor:{
@@ -25,6 +25,7 @@ const useStyles = makeStyles({
     },
     text:{
         display:'flex',
+        flexDirection: 'Column',
         justifyContent:'center',
         alignItems:'center'
     },
@@ -56,6 +57,9 @@ const Section1 = (props) => {
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className={classes.text} >
                         <Typography variant="h2" color="secondary" >
                             FJ Solutions 
+                        </Typography>
+                        <Typography variant="h6" color="initial">
+                        Webbee will make your product look modern and <br /> professional while saving you precious time.
                         </Typography>
                     </Grid>
                     <Grid item  xs={12} sm={12} md={6} lg={6} xl={6} className={classes.cuadro}>
