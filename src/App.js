@@ -22,8 +22,20 @@ function App() {
     <div className={classes.app}>
         <NavBar/>
         <Section1 />
-        <Section2 />
-        <Section2 />
+        <Section2 
+        t1='FJ Solutions'
+        s1='asdasdsadasdsadas'
+        t2='FJ Solutions'
+        s2='asdasdsadasdsadas'
+        t3='FJ Solutions'
+        s3='asdasdsadasdsadas'/>
+        <Section2 
+        t1='FJ Solutions'
+        s1='asdasdsadasdsadas'
+        t2='FJ Solutions'
+        s2='asdasdsadasdsadas'
+        t3='FJ Solutions'
+        s3='asdasdsadasdsadas'/>
         <Section3 />
         <Section4 />
         

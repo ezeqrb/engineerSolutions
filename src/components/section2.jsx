@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   });
 
 
-const Section2 = () => {
+const Section2 = (props) => {
 
     const classes = useStyles();
 
@@ -42,29 +42,29 @@ const Section2 = () => {
                         <div className={classes.icondiv}  ><EmojiPeopleRoundedIcon /></div>
                             
                             <Typography variant="h6" color="secondary">
-                                FJ Solutiones 
+                                {props.t1} 
                             </Typography>
                             <Typography variant="subtitle1" color="secondary">
-                                FJ Solutiones 
+                                {props.s1} 
                             </Typography>
                         </Box>
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4} >
                     <div className={classes.icondiv}  ><EmojiPeopleRoundedIcon /></div>
                         <Typography variant="h6" color="secondary">
-                            FJ Solutiones 
+                            {props.t1}  
                         </Typography>
                         <Typography variant="subtitle1" color="secondary">
-                            FJ Solutiones 
+                            {props.s1} 
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4} >
                     <div className={classes.icondiv}  ><EmojiPeopleRoundedIcon /></div>
                         <Typography variant="h6" color="secondary">
-                            FJ Solutiones 
+                            {props.t1}  
                         </Typography>
                         <Typography variant="subtitle1" color="secondary">
-                            FJ Solutiones 
+                            {props.s1} 
                         </Typography>
                     </Grid>
                 </Grid> 

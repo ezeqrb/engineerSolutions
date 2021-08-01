@@ -30,22 +30,25 @@ const Section3 = () => {
                 <Grid container  className={classes.contenedor} >
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
                             
-                            <Typography variant="h6" color="secondary">
-                                FJ Solutiones 
+                            <Typography variant="h5" color="secondary">
+                            Nuestro equipo de trabajo  
                             </Typography>
                             
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
                             
                             <Typography variant="h2" color="secondary">
-                                FJ Solutiones 
+                                FJ Solutions 
                             </Typography>
                             
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
                             
-                            <Typography variant="h5" color="secondary">
-                                FJ Solutiones 
+                            <Typography variant="h6" color="secondary">
+                            Trabajamos en obras, facilitandote insumos y con instalaciones.   <br />
+                            
+
+ 
                             </Typography>
                             
                     </Grid>

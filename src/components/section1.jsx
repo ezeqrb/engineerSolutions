@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
-import imagen1 from '../assets/imagen1.png'
+import imagen4 from '../assets/imagen4.png'
 
 
 
@@ -56,11 +56,16 @@ const Section1 = (props) => {
                             FJ Solutions 
                         </Typography>
                         <Typography variant="h6" color="initial">
-                        Webbee will make your product look modern and <br /> professional while saving you precious time.
+                        Somos una empresa de soluciones en ingeniería. <br /> 
+                        Estamos para que tus proyectos ocurran en tiempo y forma 
+                        
+                     
+
+                         
                         </Typography>
                     </Grid>
                     <Grid item  xs={12} sm={12} md={6} lg={6} xl={6} className={classes.cuadro}>
-                        <img src={imagen1} className={classes.imagen1} alt="imagen re piola" />
+                        <img src={imagen4} className={classes.imagen1} alt="imagen re piola" />
                     </Grid>
                 </Grid>
             </Box>
