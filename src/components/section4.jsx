@@ -45,19 +45,15 @@ const Section4 = () => {
                     <Grid item xs={12} sm={12} md={12} lg={6} xl={6} >
                         <Box className={classes.paper}>
                             <Grid container className={classes.form} spacing={2}>
-                                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                                  <Typography variant="subtitle1" color="initial">
-                                    CONTACT US
-                                  </Typography>
-                                </Grid>
+                                
                                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                                     <Typography variant="h2" color="initial">
-                                        Get in touch
+                                        Ponete en contacto
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                                   <Typography variant="h6" color="initial">
-                                  We'd love to talk about how we can help you
+                                 Nos gustaría hablar sobre cómo podemos ayudarte !
                                   </Typography>
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -75,11 +71,7 @@ const Section4 = () => {
                                   <Typography variant="subtitle2" >Info@fjsolutions.work</Typography>
 
                                 </Grid>
-                                <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-                                  <Typography variant="subtitle1" >Dirección:</Typography>
-                                  <Typography variant="subtitle2" > Belgrano 3321, Bs As </Typography>
-
-                                </Grid>
+                                
                             </Grid>
                         </Box>
                     </Grid>
@@ -88,11 +80,7 @@ const Section4 = () => {
                             <Box className={classes.paper}>
                                 <form className={classes.form} noValidate >
                                     <Grid container  spacing={2} >
-                                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                                            <Typography variant="h3" color="initial">
-                                                Formulario de contacto
-                                            </Typography>
-                                        </ Grid >
+                                        
                                         <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
                                             <TextField
                                                  autoComplete="fname"
@@ -102,7 +90,7 @@ const Section4 = () => {
                                                  fullWidth
                                                  id="firstName"
                                                  label="First Name"
-                                                 autoFocus
+                                                 
 
                                             /> 
                                         </Grid>
@@ -155,7 +143,7 @@ const Section4 = () => {
                                         </Grid>
                                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                                             <Typography variant="subtitle2" color="initial">
-                                                By clicking on "submit" you agree to our Privacy Policy, Data Policy and Cookie Policy.
+                                                Nos vamos a contactar con vos a la brevedad ! Muchas gracias 
                                             </Typography>
                                         </Grid>
                                     </Grid>

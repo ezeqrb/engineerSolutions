@@ -1,7 +1,6 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid'
-import EmojiPeopleRoundedIcon from '@material-ui/icons/EmojiPeopleRounded';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import iconbg from '../assets/iconbg.png'
@@ -39,7 +38,7 @@ const Section2 = (props) => {
             
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4} >
                         <Box>
-                        <div className={classes.icondiv}  ><EmojiPeopleRoundedIcon /></div>
+                        <div className={classes.icondiv} > {props.i1} </div>
                             
                             <Typography variant="h6" color="secondary">
                                 {props.t1} 
@@ -50,21 +49,21 @@ const Section2 = (props) => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4} >
-                    <div className={classes.icondiv}  ><EmojiPeopleRoundedIcon /></div>
+                    <div className={classes.icondiv}  >{props.i2}</div>
                         <Typography variant="h6" color="secondary">
-                            {props.t1}  
+                            {props.t2}  
                         </Typography>
                         <Typography variant="subtitle1" color="secondary">
-                            {props.s1} 
+                            {props.s2} 
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4} >
-                    <div className={classes.icondiv}  ><EmojiPeopleRoundedIcon /></div>
+                    <div className={classes.icondiv}  >{props.i3}</div>
                         <Typography variant="h6" color="secondary">
-                            {props.t1}  
+                            {props.t3}  
                         </Typography>
                         <Typography variant="subtitle1" color="secondary">
-                            {props.s1} 
+                            {props.s3} 
                         </Typography>
                     </Grid>
                 </Grid> 

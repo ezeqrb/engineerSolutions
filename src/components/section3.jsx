@@ -45,7 +45,7 @@ const Section3 = () => {
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
                             
                             <Typography variant="h6" color="secondary">
-                            Trabajamos en obras, facilitandote insumos y con instalaciones.   <br />
+                            Nuestro objetivo es ser tu socio estratégico a la hora de encarar <br /> nuevos proyectos y brindarte soluciones día a día.  
                             
 
  
