@@ -29,7 +29,6 @@ const useStyles = makeStyles({
 const Section2 = () => {
 
     const classes = useStyles();
-    const theme = useTheme();
 
     return ( 
         <>

@@ -41,7 +41,6 @@ const useStyles = makeStyles({
 const Section1 = (props) => {
 
     const classes = useStyles();
-    const theme = useTheme();
 
     return ( 
         <>
@@ -62,7 +61,7 @@ const Section1 = (props) => {
                         </Typography>
                     </Grid>
                     <Grid item  xs={12} sm={12} md={6} lg={6} xl={6} className={classes.cuadro}>
-                        <img src={imagen1} className={classes.imagen1} />
+                        <img src={imagen1} className={classes.imagen1} alt="imagen re piola" />
                     </Grid>
                 </Grid>
             </Box>

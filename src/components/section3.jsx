@@ -22,7 +22,6 @@ const useStyles = makeStyles({
 const Section3 = () => {
     
     const classes = useStyles();
-    const theme = useTheme();
     
     return (
         <>
@@ -53,7 +52,7 @@ const Section3 = () => {
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
                             
-                            <img src={imagen2} className={classes.imagen2}/>
+                            <img src={imagen2} className={classes.imagen2} alt="imagen re piola "/>
                             
                     </Grid>
 
