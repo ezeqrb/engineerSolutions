@@ -3,7 +3,6 @@ import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid'
 import EmojiPeopleRoundedIcon from '@material-ui/icons/EmojiPeopleRounded';
 import Box from '@material-ui/core/Box';
-import { useTheme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import iconbg from '../assets/iconbg.png'
 

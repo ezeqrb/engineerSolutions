@@ -1,4 +1,3 @@
-import { useTheme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import NavBar  from './components/NavBar';
 import Section1 from './components/section1';
