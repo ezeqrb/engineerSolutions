@@ -68,7 +68,7 @@ const Section4 = () => {
                                 </Grid>
                                 <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
                                   <Typography variant="subtitle1" >Email:</Typography>
-                                  <Typography variant="subtitle2" >infofjsolutions@gmail.com</Typography>
+                                  <Typography variant="subtitle2" >infofjsolution@gmail.com</Typography>
 
                                 </Grid>
                                 
