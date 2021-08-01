@@ -1,9 +1,5 @@
-import logo from './logo.svg';
 import { useTheme } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container'
 import { makeStyles } from '@material-ui/core/styles';
-
-import Typography from '@material-ui/core/Typography'
 import NavBar  from './components/NavBar';
 import Section1 from './components/section1';
 import Section2 from './components/section2';

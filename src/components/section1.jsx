@@ -5,7 +5,6 @@ import { useTheme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import imagen1 from '../assets/imagen1.png'
-import { CalendarViewDay } from '@material-ui/icons';
 
 
 
