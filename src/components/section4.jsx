@@ -48,9 +48,7 @@ const Section4 = () => {
     const [msg , setmsg] = useState('')
 
     function submitForm (event){
-        event.preventDefault();
-        
-        
+          
         const form = {
             firstName: fName,
             lastName: lName,
