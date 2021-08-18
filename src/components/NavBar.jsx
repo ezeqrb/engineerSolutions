@@ -22,7 +22,7 @@ const NavBar = (props) => {
   return ( 
         <>
         
-        <AppBar position="fixed" color="#E1E8EB">
+        <AppBar position="fixed" color="secondary">
           <Toolbar> 
             <img src={logo} className={classes.logo} alt='FJ solutions logo by zker'/>
             <Typography variant="h5">

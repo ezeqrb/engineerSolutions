@@ -8,7 +8,7 @@ import iconbg from '../assets/iconbg.png'
 
 const useStyles = makeStyles({
     boxContainer: {
-        padding:'50px 50px '
+        padding:'25px 100px '
     },
     icondiv:{
         backgroundImage : `url(${iconbg})`,
@@ -20,6 +20,8 @@ const useStyles = makeStyles({
         alignItems:'center',
         
     },
+
+     
     
   });
 
@@ -31,38 +33,40 @@ const Section2 = (props) => {
     return ( 
         <>
             <Box >
-                <Grid container 
+                <Grid 
+                container 
                 className={classes.boxContainer}
             
                 >
             
-                    <Grid item xs={12} sm={12} md={12} lg={4} xl={4} >
-                        <Box>
+                    <Grid item xs={12} sm={12} md={12} lg={4} xl={4}  >
+                        
                         <div className={classes.icondiv} > {props.i1} </div>
                             
                             <Typography variant="h6" color="secondary">
                                 {props.t1} 
                             </Typography>
-                            <Typography variant="subtitle1" color="secondary">
+                            <Typography variant="subtitle1" color="secondary" >
                                 {props.s1} 
                             </Typography>
-                        </Box>
+                        
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4} >
                     <div className={classes.icondiv}  >{props.i2}</div>
                         <Typography variant="h6" color="secondary">
                             {props.t2}  
                         </Typography>
-                        <Typography variant="subtitle1" color="secondary">
+                        <Typography variant="subtitle1" color="secondary" >
                             {props.s2} 
                         </Typography>
                     </Grid>
+
                     <Grid item xs={12} sm={12} md={12} lg={4} xl={4} >
                     <div className={classes.icondiv}  >{props.i3}</div>
                         <Typography variant="h6" color="secondary">
                             {props.t3}  
                         </Typography>
-                        <Typography variant="subtitle1" color="secondary">
+                        <Typography variant="subtitle1" color="secondary" >
                             {props.s3} 
                         </Typography>
                     </Grid>

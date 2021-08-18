@@ -9,7 +9,7 @@ import { createTheme } from '@material-ui/core/styles';
             main:"#2d3748"
         },
         third:{
-            main:"#646e73"
+            main:"#E1E8EB"
         }
     },
     typography:{

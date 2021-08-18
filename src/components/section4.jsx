@@ -5,11 +5,14 @@ import Grid from '@material-ui/core/Grid'
 import { Typography, Button, Divider } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import axios from 'axios'
+import { useState } from 'react';
+
 
 const useStyles = makeStyles((theme) => ({
     map:{
         width:"400",
-        height:"600",
+        height:"650",
         border:'0',
         allowfullscreen:"",
         loading:"lazy"
@@ -30,10 +33,68 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+
+
+   
+
+
+
+
 const Section4 = () => {
+ 
+    const [fName , setFname] = useState('')
+    const [lName , setLname] = useState('')
+    const [email , setemail] = useState('')
+    const [msg , setmsg] = useState('')
+
+    function submitForm (event){
+        event.preventDefault();
+        
+        
+        const form = {
+            firstName: fName,
+            lastName: lName,
+            email: email,
+            message: msg
+        }
+
+    
+    axios.post(`https://fjsolutions-backend.herokuapp.com/contact-form`, { form })
+        .then(res => {
+        console.log(res);
+        console.log(res.data);
+    })
+    
+        
+    }
+
+
+    
+    const handleChange = (event) => {
+        const target = event.target
+        console.log(target.value)
+        switch (target.name) {
+            case 'firstName':
+                setFname(target.value)
+                break;
+            case 'lastName':
+                setLname(target.value)
+                break;
+            case 'email':
+                setemail(target.value)
+                break;
+            case 'message':
+                setmsg(target.value)
+                break;
+            default:
+                break;
+        }
+        
+    }
+
 
     const classes = useStyles();
-    
+
     
     return (
         <>
@@ -47,12 +108,12 @@ const Section4 = () => {
                             <Grid container className={classes.form} spacing={2}>
                                 
                                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                                    <Typography variant="h2" color="initial">
+                                    <Typography variant="h2" color="secondary">
                                         Ponete en contacto
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                                  <Typography variant="h6" color="initial">
+                                  <Typography variant="h6" color="secondary">
                                  Nos gustaría hablar sobre cómo podemos ayudarte !
                                   </Typography>
                                 </Grid>
@@ -78,19 +139,20 @@ const Section4 = () => {
                     <Grid item xs={12} sm={12} md={12} lg={6} xl={6} >
                             
                             <Box className={classes.paper}>
-                                <form className={classes.form} noValidate >
+                                <form className={classes.form}  onSubmit={submitForm}>
                                     <Grid container  spacing={2} >
                                         
                                         <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
                                             <TextField
-                                                 autoComplete="fname"
-                                                 name="firstName"
-                                                 variant="outlined"
-                                                 required
-                                                 fullWidth
-                                                 id="firstName"
-                                                 label="First Name"
-                                                 
+                                                autoComplete="fname"
+                                                name="firstName"
+                                                variant="outlined"
+                                                required
+                                                fullWidth
+                                                id="firstName"
+                                                label="First Name"
+                                                error={false}
+                                                onChange={handleChange}
 
                                             /> 
                                         </Grid>
@@ -102,7 +164,10 @@ const Section4 = () => {
                                                 id="lastName"
                                                 label="Last Name"
                                                 name="lastName"
+                                                error={false}
                                                 autoComplete="lname"
+                                                onChange={handleChange}
+                                                
                                             /> 
                                         </Grid>
                                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -113,28 +178,36 @@ const Section4 = () => {
                                                id="email"
                                                label="Email Address"
                                                name="email"
+                                               error={false}
                                                autoComplete="email"
+                                               type='email'
+                                               onChange={handleChange}
                                             /> 
                                         </Grid>
                                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                                             <TextField
+                                                
                                                 variant="outlined"
                                                 required
                                                 fullWidth
-                                                name="Message"
+                                                name="message"
                                                 label="Message"
-                                                id="Message"
+                                                id="message"
+                                                multiline
+                                                rows={4}
+                                                error={false}
                                                 autoComplete="Message"
+                                                onChange={handleChange}
                                             /> 
                                         </Grid>
                                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                                            <Button 
+                                            <Button
                                                 type="submit"
                                                 fullWidth
                                                 variant="contained"
                                                 color="primary"
                                              >
-                                                Submit
+                                                Enviar
                                             </Button>
                                         </Grid>
                                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -165,3 +238,7 @@ const Section4 = () => {
 }
 
 export default Section4 ;
+
+
+
+
