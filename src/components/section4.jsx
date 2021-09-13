@@ -7,6 +7,9 @@ import TextField from '@material-ui/core/TextField';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import axios from 'axios'
 import { useState } from 'react';
+import Snackbar from '@material-ui/core/Snackbar';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -42,13 +45,15 @@ const useStyles = makeStyles((theme) => ({
 
 const Section4 = () => {
  
+    const [open, setOpen] = useState(false);
     const [fName , setFname] = useState('')
     const [lName , setLname] = useState('')
     const [email , setemail] = useState('')
     const [msg , setmsg] = useState('')
 
-    function submitForm (event){
-          
+   async function submitForm (event){
+
+        event.preventDefault()
         const form = {
             firstName: fName,
             lastName: lName,
@@ -56,17 +61,26 @@ const Section4 = () => {
             message: msg
         }
 
-    
-    axios.post(`https://fjsolutions-backend.herokuapp.com/contact-form`, { form })
-        .then(res => {
-        console.log(res);
-        console.log(res.data);
-    })
-    
-        
+        console.log(form, "formulario")
+        await axios({
+                method: 'post',
+                url: 'https://fjsolutions-backend.herokuapp.com/contact-form',
+                data: form
+            })
+            .then( res => {
+                console.log(res)
+            })
+            setOpen(true);
+
     }
 
-
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOpen(false);
+      };
     
     const handleChange = (event) => {
         const target = event.target
@@ -96,7 +110,26 @@ const Section4 = () => {
     
     return (
         <>
-        
+        <Snackbar
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Formulario Enviado"
+        action={
+          <React.Fragment>
+            <Button color="secondary" size="small" onClick={handleClose}>
+              Cerrar
+            </Button>
+            <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          </React.Fragment>
+        }
+      />
             <Box className={classes.boxStyle}>
             <CssBaseline />
                 
@@ -226,7 +259,7 @@ const Section4 = () => {
                 
                 </Grid>
 
-            
+                      
 
             </Box>
 

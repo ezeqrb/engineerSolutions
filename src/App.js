@@ -9,6 +9,7 @@ import PowerIcon from '@material-ui/icons/Power';
 import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
 import SettingsIcon from '@material-ui/icons/Settings';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import Section5 from './components/section5';
 
 
 
@@ -51,6 +52,7 @@ function App() {
           i3 =  {<AcUnitIcon />}
           t3='Renta de equipos de AACC'
           s3='Tenemos a disposición equipos autónomos de Aire acondicionado'/>
+        <Section5 />
         <Section3 />
         <Section4 />
         
