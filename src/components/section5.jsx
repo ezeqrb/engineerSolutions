@@ -33,7 +33,7 @@ function Section5() {
                 direction="row"
                 justifyContent="center" 
                 alignItems="center"
-                spacing={4}>
+                >
                 
                 
                     <Grid item >
@@ -46,7 +46,7 @@ function Section5() {
                         </Box>
                     </Grid>
                     <Grid item >
-                        <Box mb={3} mt={4}>
+                        <Box mb={3} mt={4} ml={5} mr={5}>
                             <Cards 
                                 img='/img2.jpeg'
                                 tittle='Mantenimiento electrico'
