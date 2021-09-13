@@ -24,8 +24,6 @@ const useStyles = makeStyles((theme) => ({
 function Section5() {
     
     
-    const classes = useStyles();
-
     return (
         <>
 
