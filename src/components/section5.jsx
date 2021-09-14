@@ -30,8 +30,8 @@ function Section5() {
                         <Box mb={3} mt={4} ml={2} mr={1} >
                             <Cards 
                                 img='/img2.jpeg'
-                                tittle='Mantenimiento electrico'
-                                content='Obras, instalación y reparación'
+                                tittle='Obras '
+                                content='Mantenimiento, instalación y reparación m3'
                             /> 
                         </Box>
                     </Grid>
@@ -41,7 +41,7 @@ function Section5() {
                             <Cards 
                                 img='/img3.jpeg'
                                 tittle='Mantenimiento electrico'
-                                content={`Montajes , cableado e instalaciones`}
+                                content={`Montajes, cableado e instalaciones`}
                             />
                         </Box>
                     </Grid>
