@@ -22,29 +22,40 @@ function Section5() {
                             <Cards  
                                 img='/img1.jpeg'
                                 tittle='Mantenimiento electrico'
-                                content='assets/img1.jpeg'
+                                content='Climatización y mantenimiento vrv'
                             />
                         </Box>
                     </Grid>
                     <Grid item >
-                        <Box mb={3} mt={4} ml={5} mr={5}>
+                        <Box mb={3} mt={4} ml={2} mr={1} >
                             <Cards 
                                 img='/img2.jpeg'
                                 tittle='Mantenimiento electrico'
-                                content='assets/img1.jpeg'
+                                content='Obras, instalación y reparación'
                             /> 
+                        </Box>
+                    </Grid>
+
+                    <Grid item >
+                        <Box mb={3} mt={4} ml={1} mr={2}>
+                            <Cards 
+                                img='/img3.jpeg'
+                                tittle='Mantenimiento electrico'
+                                content={`Montajes , cableado e instalaciones`}
+                            />
                         </Box>
                     </Grid>
 
                     <Grid item >
                         <Box mb={3} mt={4}>
                             <Cards 
-                                img='/img3.jpeg'
-                                tittle='Mantenimiento electrico'
-                                content='assets/img1.jpeg'
+                                img='/img4.jpeg'
+                                tittle='Arquitectura'
+                                content='Diversos arreglos y obras de remodelación  '
                             />
                         </Box>
                     </Grid>
+
                 
             </Grid>
             
